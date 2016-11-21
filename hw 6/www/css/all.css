@@ -1,0 +1,484 @@
+
+@font-face {
+    font-family: 'lobster_1.4regular';
+    src: url('../fonts/lobsterregular-webfont.eot');
+    src: url('../fonts/lobsterregular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/lobsterregular-webfont.woff2') format('woff2'),
+         url('../fonts/lobsterregular-webfont.woff') format('woff'),
+         url('../fonts/lobsterregular-webfont.ttf') format('truetype'),
+         url('../fonts/lobsterregular-webfont.svg#lobster_1.4regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+	margin: 0 auto;
+	color: #000;	
+	background: #fff;
+	font: 12px/1 'Open Sans', arial, helvetica, sans-serif;
+	position: relative;
+}
+/* General reset */
+img {
+	border: none;
+	max-width: 100%;
+}
+a {
+	color: #000;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+ul {
+	margin: 0;
+	list-style: none;
+	padding: 0;
+}
+/* General settings */
+/*DEFAULTS STYLE*//*  *-для всех*/
+*{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	.box-sizing: border-box;	
+}
+.container{
+	width: 1250px;
+	padding: 0 10px;
+	margin: 0 auto;
+}
+.vertical-align::before{
+	content: '';
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+	margin-left: -4px;
+}
+.vertical-align > *{
+	display: inline-block;
+	vertical-align: middle;
+}
+.btn{
+	display: inline-block;	
+	
+}
+h1,h3,h4,h5{
+	 font-family: 'lobster_1.4regular';
+}
+h4{
+	font-size: 28px;
+	text-align: center;
+}
+p{
+	font-size: 20px;
+	text-align: center;
+	padding: 0 100px;
+}
+h5{
+	padding-top: 35px;
+	font-size: 22px;
+}
+input, button, textarea, select{
+	outline: none;
+}
+/*DEFAULTS STYLE END*/
+.form-control,.jq-selectbox__select{
+	width: 100%;
+	border: 2px solid #b5b5b5;
+	background: #fff;
+	height: 34px;
+	color: #5a5959;
+	font-size: 14px;
+	padding-left: 14px;
+}
+.form-control:focus{
+	border-color: #bc2336;
+}
+::-webkit-input-placeholder {color:#5a5959;}
+::-moz-placeholder          {color:#5a5959;}/* Firefox 19+ */
+:-moz-placeholder           {color:#5a5959;}/* Firefox 18- */
+:-ms-input-placeholder      {color:#5a5959;}
+
+:focus::-webkit-input-placeholder {color: transparent}
+:focus::-moz-placeholder          {color: transparent}
+:focus:-moz-placeholder           {color: transparent}
+:focus:-ms-input-placeholder      {color: transparent}
+/*HEADER START*/
+.header{
+	height: 102px;
+	background: #fff;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 999;	
+}
+.header-nav{
+	margin: -50px 305px;
+	font-size: 14px;
+}
+.icon-nav{
+	position: absolute;
+	bottom: 32px;
+	right: 26px;
+}
+.icon-nav li{
+	float: right;
+}
+.icon-nav li a{
+	margin: 0 16px;
+}
+.icon-nav li a{
+	display: inline-block;
+	width: 11px;
+	background: url('../img/sprite.png') no-repeat;
+}
+.icon-nav li a.vk{
+	width: 24px;
+	height: 24px;
+	background-position: -0px -48px;
+}
+.icon-nav li a.vk:hover{
+	background-position: -48px -48px;
+}
+.icon-nav li a.tw{
+	width: 24px;
+	height: 24px;
+	background-position: -48px -24px;
+}
+.icon-nav li a.tw:hover{
+	background-position: -24px -48px;
+}
+.icon-nav li a.gg{
+	width: 24px;
+	height: 24px;
+	background-position: -24px -24px;
+}
+.icon-nav li a.gg:hover{
+	background-position: -0px -24px;
+}
+.menu {
+	float: right;
+}
+.menu ul li{	
+	float: left;
+	text-align: center;
+}
+.menu ul li+li{
+	margin:0px 15px;
+}
+/*HEADER END*/
+/*MAIN START*/
+.call-to-action{
+	background: url('../img/inner-bg.jpg') no-repeat top center;
+	background-size: cover;
+	width: 100%;
+	height: 100vh;/*100% любого экрана(ноут,моб.)*/
+	padding-top: 116px;
+	text-align: center;
+	color: #fff;
+}
+.call-to-action-text span{
+	display: block;
+	padding-bottom: 32px;
+}
+.call-to-action-text a{
+	color: #fff;
+}
+.call-to-action-text .btn{
+	height: 55px;
+	width: 250px;
+	font-size: 16px;
+	line-height: 55px;
+	text-align: center;
+	border: 4px solid #bc2336;
+}
+.call-to-action h1{
+	margin-top: 6%;	
+	font-size: 56px;
+}
+.call-to-action span{
+	font-size: 14px;
+	line-height: 22px;	
+}
+
+.services-wrap{
+	font-size: 0;
+	padding-top: 60px;
+}
+.service{
+	display: inline-block;
+	width: 33.3333%;
+	padding: 0 10px;
+	position: relative;
+	margin-bottom: 30px;
+}
+.service-text{
+	width: 206px;
+	height: 206px;
+	border-radius: 50%;
+	background: rgba(255,255,255, .85);
+	position: absolute;
+	top: 50%;
+	margin-top: -103px;
+	left: 50%;
+	margin-left: -103px;
+	text-align: center;
+}
+.service-text a{
+	display: inline-block;
+	width: 197px;
+	height: 197px;
+	border-radius: 50%;
+	text-align: center;
+	font-size: 18px;
+	color: #000;
+	margin-left: 4px;
+	border: 3px solid transparent;
+}
+.service-text a::before{
+	margin-left: 0;
+}
+.service-text a:hover{
+	border-color: #bc2336;
+	color: #bc2336;
+}
+.less{
+	width: 125px;
+}
+/*MAIN END*/
+/*FOOTER START*/
+.footer{
+	height: 245px;
+	background: #000;
+	color: #fff;
+	text-align: center;
+}
+.footer-head{
+	display: block;
+}
+.footer-nav{
+	margin-top: 30px;
+}
+.footer-nav li a{
+	display: inline-block;
+	width: 11px;
+	background: url('../img/sprite.png') no-repeat;
+}
+.footer-nav li a.vk{
+	width: 24px;
+	height: 24px;
+	background-position: -48px -0px;
+}
+.footer-nav li a.vk:hover{
+	background-position: -48px -48px;
+}
+.footer-nav li a.tw{
+	width: 24px;
+	height: 24px;
+	background-position: -24px -0px;
+}
+.footer-nav li a.tw:hover{
+	background-position: -24px -48px;
+}
+.footer-nav li a.gg{
+	width: 24px;
+	height: 24px;
+	background-position: -0px -0px;
+}
+.footer-nav li a.gg:hover{
+	background-position: -0px -24px;
+}
+.footer-nav li{
+	float: right;
+}
+.footer-nav li + li{
+	margin-right: 33px;
+}
+/*FOOTER END*/
+/*MODAL STYLE*/
+.modal{
+	display: none;
+	background: #fff;
+	width: 755px;
+	min-height: 405px;
+	padding: 20px;
+}
+.form-text{
+	float: left;
+	width: 48%;
+}
+.form-text input+input{
+	margin-top: 30px;
+}
+.form-sel{
+	float: right;
+	width: 48%;
+}
+.form-sel.form-control{
+	border:none;
+}
+form span{
+	margin-top: 40px;
+	display: block;
+	font: 24px/32px 'Open sans';
+	margin-bottom: -20px;
+	text-align: center;
+}
+form h3{
+	font-size: 36px;
+	font-weight: 500;
+	text-align: center;
+}
+.form-sel{
+	float: right;
+	width: 50%;
+}
+.form-sel textarea{
+	margin-top: 30px;
+	min-height: 100px;
+	width: 100%; 
+	font:14px 'Open sans'; 
+}
+form button{
+	color: #fff;
+	background: #bc2336;
+	line-height: 45px;
+	font: 14px/40px 'Open sans';	
+	margin: 5% 16%;
+	width:140px;
+	border:none;
+}
+form .butt{
+	text-align: center;
+}
+.close{
+	display: inline-block;
+	float: right;
+	height: 25px;
+	width: 25px;
+}
+form a{			
+	height: 10px;
+	z-index: 100;
+}
+/*@media (max-width: 1024px){  /*код пишем от большего расширения к меньшему
+	.header-nav{
+		display: none;
+	}
+}*/
+.slicknav_menu {
+	display:none;
+}
+/*MEDIA*/
+@media (max-width: 1300px){
+	.container{
+		width: 1254px;
+	}	
+}
+@media (max-width: 1173px){
+	.container{
+		width: 1156px;
+	}
+	.header-nav {
+    margin-right: 226px;
+    margin-top: -50px;
+	}
+	.icon-nav{
+		display: none;
+	}
+}
+@media (max-width: 949px){
+	.container{
+		width: 100%;
+	}
+	.header{
+		height: 100px;
+	}
+	.slicknav_menu {
+		display: block;
+		float: right;
+		width: 50px;
+		height: 50px;
+	}
+	.menu{
+		display: none;
+	}
+}
+@media (max-width: 767px){
+	.service{
+		width: 50%;
+	}
+	.modal{
+		width: 480px;
+	}
+}
+@media (max-width: 599px){
+	.call-to-action{
+		height: 500px;
+	}
+	.service{
+		width: 100%
+	}
+	.service img{
+		width: 100%;
+	}
+}
+@media (max-width: 479px){
+	.modal{
+		width: 250px;
+	}
+	.call-to-action-text .btn{
+		width: 200px;
+	}
+	.container p{
+    font-size: 18px;
+    text-align: center;
+    padding: 0 0;
+	}
+	.service-text{
+		width: 162px;
+		height: 162px;
+		top: 62%;
+		left: 57%;
+	}
+	.service-text a{
+		width: 155px;
+		height: 155px;
+	}
+	.form-text{
+		width: 100%;
+	}
+	.form-sel{
+		width: 100%;
+	}
+	.form-text+.form-sel{
+		padding-top: 25px;
+	}
+}
+}
+/*@media (max-width: 320px){
+	.container p{
+    font-size: 18px;
+    text-align: center;
+    padding: 0 0;
+	}
+	.service-text{
+		width: 162px;
+		height: 162px;
+		top: 62%;
+		left: 57%;
+	}
+	.service-text a{
+		width: 155px;
+		height: 155px;
+	}
+	.form-text{
+		width: 100%;
+	}
+	.form-sel{
+		width: 100%;
+	}
+	.form-text+.form-sel{
+		padding-top: 25px;
+	}
+}*/

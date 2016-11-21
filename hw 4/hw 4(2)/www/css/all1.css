@@ -1,0 +1,150 @@
+body {
+	margin: 0 auto;
+	color: #333;
+	width: 769px;
+	background: #fff;
+	font: 12px/1 arial, helvetica, sans-serif;
+
+}
+/* General reset */
+img {
+	border: none;
+}
+a {
+	color: #000;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+ul {
+	margin: 0;
+	list-style: none;
+	padding: 0;
+}
+/* General settings */
+/*HEADER START*/
+.wrapper{
+	background: url('../img/') repeat-y top left;
+}
+.header{
+	height: 234px;
+	background: url('../img/header-ic.png') no-repeat;	
+	padding-bottom: 11px;
+	position: relative;
+}
+.header-nav{
+	float: right;
+	margin-top: 6px;
+
+}
+.header-nav li{
+	float: left;
+	margin: 0 20px;
+}
+.header-nav li a{
+	font-weight: bold;
+	font-size: 10px;
+}
+.header-nav li a:hover{
+	color: #003366;
+}
+.line{
+	position: absolute;
+	top: 164px;
+}
+.icon-nav{
+	position: absolute;
+	bottom: 51px;
+	right: 158px;
+}
+.icon-nav li{
+	float: left;
+}
+.icon-nav li + li{
+	margin-left: 27px;
+}
+.icon-nav li a{
+	display: inline-block;
+	width: 11px;
+	background: url('../img/sprite-ic1.png') no-repeat;
+}
+.icon-nav li a.busket{
+	width: 14px;
+	height: 9px;
+	background-position: 0px -9px;
+}
+.icon-nav li a.busket:hover{
+	background-position: 0px 0px;
+}
+.icon-nav li a.mail{
+	height: 8px;
+	background-position: 0px -46px;
+}
+.icon-nav li a.mail:hover{
+	background-position: 0px -38px;
+}
+.icon-nav li a.home{
+	height: 10px;
+	background-position: 0px -28px;
+}
+.icon-nav li a.home:hover{
+	background-position: 0px -18px;
+}
+.icon-nav li a.search{
+	height: 11px;
+	background-position: 0px -65px;
+}
+.icon-nav li a.search:hover{
+	background-position: -0px -54px;
+}
+.sidebar{
+	width: 200px;
+	padding: 25px 20px;
+	background: url('../img/sidebar-bg.png') repeat-y left;
+	position: absolute;
+	top: 168px;	
+}
+.sidebar .head{	
+	background:url('../img/sidebar-ic.png') no-repeat;
+	background-position: 0 113px;
+	padding-top: 117px;
+}
+.head li a{
+	font-size: 12px;
+	color: #fff;
+}
+.head li a:hover{
+	color: #003366;
+}
+.head li + li{
+	padding-top: 13px;
+}
+h3{
+	color: #fff;
+	padding-top: 114px;
+}
+.content {
+	padding-left: 250px;
+	padding-right: 23px;
+}
+.content h4{
+	color: #6699cc;
+}
+.content a h4{
+	float: right;
+}
+.content a h4:hover{
+	text-decoration: underline;
+}
+.footer{
+	width: 769px;
+	
+	background: url('../img/footer-bg1.png') no-repeat;
+	background-position: 0px 16px;
+	padding:32px 0;
+}
+.footer h5{
+	color: #fff;
+	float: right;
+}
